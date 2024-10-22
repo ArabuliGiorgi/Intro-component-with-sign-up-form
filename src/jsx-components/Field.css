@@ -7,3 +7,16 @@
     color: #FF7979;
     margin-top: 6px;
 }
+.InputField::placeholder{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    opacity: 0.75;
+    color: #3D3B48;
+}
+.InputField:focus{
+    border: 1px solid #5E54A4;
+    outline: none;
+}

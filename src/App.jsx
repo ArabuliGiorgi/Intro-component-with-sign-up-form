@@ -18,7 +18,10 @@ function App() {
           Try it free 7 days <span className='font-normal'>then $20/mo. thereafter</span></h1>
         </div>
         <div className="form">
-          <Field placeholder={'name'} clicked={clicked}></Field>
+          <Field placeholder={'First Name'} clicked={clicked}></Field>
+          <Field placeholder={'Last Name'} clicked={clicked}></Field>
+          <Field placeholder={'Email Address'} clicked={clicked}></Field>
+          <Field placeholder={'Password'} clicked={clicked}></Field>
         </div>
       </Container2>
     </main>
