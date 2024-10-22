@@ -22,6 +22,8 @@ function App() {
           <Field placeholder={'Last Name'} clicked={clicked}></Field>
           <Field placeholder={'Email Address'} clicked={clicked}></Field>
           <Field placeholder={'Password'} clicked={clicked}></Field>
+          <button className='submit-btn' onClick={() => setClicked(true)}><h1>CLAIM YOUR FREE TRIAL</h1></button>
+          <h1 className='termsAndServices'>By clicking the button, you are agreeing to our <span className='text-[#FF7979] font-[700]'>Terms and Services</span></h1>
         </div>
       </Container2>
     </main>
