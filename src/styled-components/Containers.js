@@ -20,6 +20,22 @@ const Container1 = styled.div`
         color: #FFFFFF;
         letter-spacing: 1.2px;
     }
+
+    @media only screen and (min-width: 1150px) {
+        h1{
+            font-size: 50px;
+            line-height: 55px;
+            letter-spacing: -0.52px;
+            text-align: left;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            text-align: left;
+            letter-spacing: 0.4px;
+        }
+    }
 `;
 
 const Container2 = styled.div`
@@ -70,6 +86,19 @@ const Container2 = styled.div`
         color: #BAB7D4;
         margin-top: 8px;
         padding: 0 15px;
+    }
+
+    @media only screen and (min-width: 1150px){
+        .plan{
+            padding: 17px 0;
+        }
+        .form{
+            padding: 40px;
+        }
+        .termsAndServices{
+            line-height: 26px;
+            padding: 0;
+        }
     }
 `;
 
