@@ -15,8 +15,7 @@ function App() {
     firstName: "",
     lastName: "",
     email: "",
-    password: "",
-    clickNumber: 0
+    password: ""
   });
   function validate() {
     const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
@@ -72,32 +71,30 @@ function App() {
             name="firstName"
             setValues={setValues}
             errors={errors}
+            setErrors={setErrors}
           ></Field>
           <Field
             placeholder={"Last Name"}
             name="lastName"
             setValues={setValues}
             errors={errors}
+            setErrors={setErrors}
           ></Field>
           <Field
             placeholder={"Email Address"}
             name="email"
             setValues={setValues}
             errors={errors}
+            setErrors={setErrors}
           ></Field>
           <Field
             placeholder={"Password"}
             name="password"
             setValues={setValues}
             errors={errors}
+            setErrors={setErrors}
           ></Field>
-          <button className="submit-btn" onClick={() => {
-              validate();
-              setErrors(preValues => ({
-                ...preValues,
-                clickNumber: preValues.clickNumber + 1
-              }));
-            }}>
+          <button className="submit-btn" onClick={validate}>
             <h1>CLAIM YOUR FREE TRIAL</h1>
           </button>
           <h1 className="termsAndServices">
